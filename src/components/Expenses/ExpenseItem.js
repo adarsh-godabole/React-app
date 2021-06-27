@@ -1,10 +1,10 @@
 import React from "react";
 import "./ExpenseItem.css";
-import Card from "./Card.js";
+import Card from "../UI/Card";
 
 import ExpenseDate from "./ExpenseDate";
 
-export default function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   const expenseDate = new Date(21, 3, 3);
   const expenseTitle = "Laptop";
   const expenePrice = 56000;
@@ -18,4 +18,5 @@ export default function ExpenseItem(props) {
       </div>
     </Card>
   );
-}
+};
+export default ExpenseItem;
